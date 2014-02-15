@@ -5,6 +5,6 @@ A collection of addition local rules
 
 Currently part are rules for:
 
-* (Bley) 
-* (Dovecot)
+* Bley
+* Dovecot with vmm
 * VMWare ESX(i) clients
