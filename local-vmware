@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[*[[:digit:]]+\.[[:digit:]]+\])? VMCIUtil: Updating context id from 0x[[:alnum:]]+ to 0x[[:alnum:]]+ on event 0\.$
