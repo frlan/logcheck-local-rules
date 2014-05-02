@@ -1,5 +1,6 @@
 # Connecting to (vmm)-database
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: auth: pgsql\([[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\): Connected to database [[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: dict: pgsql\([[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\): Connected to database [[:alnum:]]+$
 # Closing connection 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([-_.@[:alnum:]]+\): Connection closed in=[[[:digit:]]+ out=[[:digit:]]+$
 # General login to IMAP or POP3-server 
