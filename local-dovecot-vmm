@@ -3,5 +3,6 @@
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: dict: pgsql\([[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\): Connected to database [[:alnum:]]+$
 # Closing connection 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([-_.@[:alnum:]]+\): Connection closed in=[[[:digit:]]+ out=[[:digit:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: imap\([-_.@[:alnum:]]+\): Disconnected: Logged out in=[[[:digit:]]+ out=[[:digit:]]+$
 # General login to IMAP or POP3-server 
 ^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dovecot: (imap|pop3)-login: Login: user=<[-_.@[:alnum:]]+>
