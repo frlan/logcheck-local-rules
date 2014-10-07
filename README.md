@@ -9,3 +9,4 @@ Currently part are rules for:
 * Dovecot with vmm
 * VMWare ESX(i) clients
 * OpenSSH
+* Postfix (SPF)

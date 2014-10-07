@@ -1,0 +1,10 @@
+# spf pass
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/policy-spf\[[[:digit:]]+\]: Policy action=PREPEND Received-SPF: pass \([._[:alnum:]-]+: ([A-Fa-f0-9.:]+|Sender) is authorized to use '[._=*+[:alnum:]-]+@[._[:alnum:]-]+' in 'mfrom' identity \(mechanism '(ip[46]:[0-9A-Fa-f.:]+|ip[46]:[0-9A-Fa-f.:]+/[[:digit:]]{1,2}|mx|include:[._[:alnum:]-]+)' matched\)\) receiver=[._[:alnum:]-]+; identity=mailfrom; envelope-from="[._+=[:alnum:]-]+@[._[:alnum:]-]+"; helo=[._[:alnum:]-]+; client-ip=[.:A-Fa-f0-9]+$
+# spf
+#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/policy-spf\[[[:digit:]]+\]: Policy action=PREPEND Received-SPF: [[:lower:]]+ \([._:alnum:-]+[\.]*[._[:alnum:]-]+*: [ ,'@~():alpha:]+\) receiver=[._[:alnum:]-]+; identity=mailfrom; envelope-from=\"[._:alpha:-]+@[._:alpha:-]+\"; helo=[._:alpha:-]+; client-ip=[.:A-Fa-f0-9]+$
+# postfix tls
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/smtp\[[[:digit:]]+\]: Untrusted TLS connection established to [._[:alnum:]-]+\[[.::xdigit:]\]:25:  [:xdigit::alpha:.] with cipher [:alpha::xdigit:-] \([0-9]+/[0-9]+ bits\)$
+# spf pass
+#^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/policy-spf\[[[:digit:]]+\]: Policy action=PREPEND Received-SPF: pass \([._[:alnum:]-]+: [A-Fa-f0-9.:]+ is authorized to use '[._*+[:alnum:]-]+@[._[:alnum:]-]+' in 'mfrom' identity \(mechanism 'ip[46]:[0-9A-Fa-f.:]+' matched\)\) receiver=[._[:alnum:]-]+; identity=mailfrom; envelope-from="[._+=[:alnum:]-]+@[._[:alnum:]-]+"; helo=[._[:alnum:]-]+; client-ip=[0-9A-Fa-f.:]+$
+# spf none
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ postfix/policy-spf\[[[:digit:]]+\]: Policy action=PREPEND Received-SPF: none \([._[:alnum:]-]+: No applicable sender policy available\) receiver=[._[:alnum:]-]+; identity=mailfrom; envelope-from="[._+=[:alnum:]-]+@[._[:alnum:]-]+"; helo=[._[:alnum:]-]+; client-ip=[0-9A-Fa-f.:]+$
