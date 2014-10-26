@@ -1,0 +1,6 @@
+#Attampting to catch:
+#[25-Oct-2014 10:01:05] NOTICE: [pool www] child 2488 exited with code 0 after 38854.236142 seconds from start
+#[25-Oct-2014 10:01:05] NOTICE: [pool www] child 21504 started
+
+\[[0-9]+-[a-zA-Z]+-[0-9]+ [0-9]+:[0-9]+:[0-9]+\] NOTICE: \[pool [a-zA-Z0-9]+\] child [0-9]+ exited with code 0 .*
+\[[0-9]+-[a-zA-Z]+-[0-9]+ [0-9]+:[0-9]+:[0-9]+\] NOTICE: \[pool [a-zA-Z0-9]+\] child [0-9]+ started
